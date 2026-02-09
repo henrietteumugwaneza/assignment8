@@ -9,51 +9,90 @@
 
 <body class="bg-black text-white overflow-x-hidden">
 
-<!-- ================= NAVBAR + HERO ================= -->
-<header class="relative min-h-screen bg-gradient-to-br from-purple-700 via-orange-600 to-black">
+<body class="bg-black text-white overflow-x-hidden">
 
-  <!-- Navbar -->
-  <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-    <div class="flex items-center gap-2 text-xl font-bold">
-      <div class="bg-orange-500 w-9 h-9 rounded-lg flex items-center justify-center">g</div>
-      Genesis
-    </div>
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/40 border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-    <ul class="hidden md:flex gap-8 text-sm font-medium">
-      <li><a href="#" class="hover:text-orange-400">Features</a></li>
-      <li><a href="#" class="hover:text-orange-400">Use Cases</a></li>
-      <li><a href="#" class="hover:text-orange-400">Pricing</a></li>
-      <li><a href="#" class="hover:text-orange-400">FAQ</a></li>
-    </ul>
-
-    <div class="flex gap-3">
-      <button class="hidden md:block px-5 py-2 rounded-full border border-white/30 hover:bg-white/10">Sign In</button>
-      <button class="px-5 py-2 rounded-full bg-white text-black font-semibold hover:bg-gray-200">Get Started</button>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
-    <div>
-      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
-        Build powerful <span class="text-orange-400">AI agents</span><br>
-        in minutes, not months
-      </h1>
-
-      <p class="mt-6 text-lg text-white/80">
-        Design, customize, and deploy intelligent AI agents that automate workflows and scale your business.
-      </p>
-
-      <div class="mt-8 flex gap-4">
-        <button class="px-7 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200">Try for Free</button>
-        <button class="px-7 py-3 rounded-full border border-white/30 hover:bg-white/10">View Demo</button>
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-lg bg-orange-500 flex items-center justify-center font-bold text-white text-lg">
+        g
       </div>
+      <span class="text-xl font-bold">Genesis</span>
     </div>
 
-    <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-6 border border-white/20">
+    <!-- Links -->
+    <div class="hidden md:flex items-center gap-8 text-white/80">
+      <a href="#" class="hover:text-white">Home</a>
+      <a href="#" class="hover:text-white">Agents</a>
+      <a href="#" class="hover:text-white">Use Cases</a>
+      <a href="#" class="hover:text-white">Pricing</a>
+      <a href="#" class="hover:text-white">Docs</a>
     </div>
+
+    <!-- Button -->
+    <div>
+      <button class="px-5 py-2 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 transition">
+        Sign Up
+      </button>
+    </div>
+
   </div>
-</header>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="relative min-h-screen flex items-center justify-center pt-32 overflow-hidden">
+
+  <!-- Background Gradient -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_5%_60%,#5b21b6,transparent_40%),radial-gradient(circle_at_50%_20%,#f97316,transparent_45%),radial-gradient(circle_at_85%_60%,#000,transparent_40%),#000]"></div>
+
+  <div class="relative max-w-5xl mx-auto text-center px-6">
+
+    <!-- Top Badge -->
+    <div class="inline-flex items-center gap-3 mb-6 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm">
+      <span>Smart, Fast, Always Active.</span>
+      <span class="px-3 py-1 rounded-full bg-orange-500/80 text-xs font-semibold">
+        Launch App
+      </span>
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+      Build, Deploy & Talk to AI<br>
+      Agents in Seconds.
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-white/80 max-w-2xl mx-auto mb-10 text-lg">
+      Design AI assistants that research, plan, and execute tasks — all powered by your prompts.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+      <button class="px-8 py-4 rounded-full bg-orange-500 hover:bg-orange-600 transition font-semibold">
+        Create Agent
+      </button>
+      <button class="px-8 py-4 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 transition font-semibold flex items-center gap-2 justify-center">
+        ▶ Watch Demo
+      </button>
+    </div>
+
+    <!-- Trusted Brands -->
+    <p class="text-white/60 mb-6">Trusting by leading brands, including —</p>
+
+    <div class="flex flex-wrap justify-center gap-10 text-white/80 text-lg font-semibold">
+      <span>Microsoft</span>
+      <span>Framer</span>
+      <span>Instagram</span>
+      <span>HUAWEI</span>
+      <span>Walmart</span>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- ================= USE CASES / WORKFLOW ================= -->
 <section class="py-32 bg-gradient-to-br from-purple-700 via-orange-600 to-black">
@@ -457,7 +496,7 @@
 </section>
 
 <!-- ================= FOOTER ================= -->
- 
+
 <footer class="relative pt-28 pb-10 overflow-hidden">
 
   <!-- Background Gradient -->
